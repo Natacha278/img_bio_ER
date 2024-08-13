@@ -1,0 +1,75 @@
+ ------- Experiment -------
+cnn paper processed
+Dataset: Dataset/physio_processed
+Dataset split: Dataset/src_tar_split_paper
+Bio signal: gsr
+Num epoch: 100
+Batch size: 256
+Model: Conv1D_model_nosftmx(
+  (conv1): Conv1d(1, 32, kernel_size=(5,), stride=(2,))
+  (relu1): ReLU()
+  (maxpool1): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv1d(32, 64, kernel_size=(5,), stride=(1,))
+  (relu2): ReLU()
+  (maxpool2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (fc1): Linear(in_features=22336, out_features=512, bias=True)
+  (relu3): ReLU()
+  (fc2): Linear(in_features=512, out_features=2, bias=True)
+  (sigmoid): Sigmoid()
+  (softmax): Softmax(dim=1)
+)
+Optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.0001
+    maximize: False
+    weight_decay: 0
+)
+Scheduler: None
+
+--- Training results ---
+Best epoch:  81
+Training accuracy:  88.23051948051948
+Best validation accuracy:  83.3
+Best validation f1:  0
+
+--- Testing results ---
+Target 1 accuracy: 100.0
+Target 1 f1-score: 0
+
+Target 2 accuracy: 97.5
+Target 2 f1-score: 0
+
+Target 3 accuracy: 72.5
+Target 3 f1-score: 0
+
+Target 4 accuracy: 97.5
+Target 4 f1-score: 0
+
+Target 5 accuracy: 87.5
+Target 5 f1-score: 0
+
+Target 6 accuracy: 87.5
+Target 6 f1-score: 0
+
+Target 7 accuracy: 90.0
+Target 7 f1-score: 0
+
+Target 8 accuracy: 95.0
+Target 8 f1-score: 0
+
+Target 9 accuracy: 92.5
+Target 9 f1-score: 0
+
+Target 10 accuracy: 70.0
+Target 10 f1-score: 0
+
+Targets mean accuracy: 89.0
+Targets mean f1-score: 0
+
